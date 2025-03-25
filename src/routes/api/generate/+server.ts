@@ -35,7 +35,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const { message } = await request.json()
     
     const chat = await ollama.chat({
-      model: "deepseek-r1:1.5b",
+      model: "deepseek-r1:7b",
       messages: [
         {
           role: "system",
